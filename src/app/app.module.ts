@@ -1,16 +1,17 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import {NgxScannerQrcodeModule} from 'ngx-scanner-qrcode'
+import { SafePipe } from './safe.pipe';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SafePipe
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    NgxScannerQrcodeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
